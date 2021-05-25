@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "robot-framework-arduino-daq-lib"
+name = "robotframework-arduino-daq-lib"
 version = "0.1.0"
 description = "Arduino DAQ library for Robot Framework"
 authors = ["Fedor Chervyakov <fchervyakov@gmail.com>"]
