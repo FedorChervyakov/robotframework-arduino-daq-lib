@@ -70,6 +70,10 @@ class ArduinoDAQLibrary:
     def state_of_digital_pin(self, pin_number: int):
         return self.board.digital_read(pin_number)[0]
 
+    @keyword("Set digital pin ${pin_number:\d+} ${state}")
+    def write_digital_pin(self, pin_number: int, state: bool):
+        return self.board.digital_pin_write(pin_number, int(state))
+
 
 class ArduinoDAQLibraryException(Exception):
     pass
