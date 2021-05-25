@@ -1,3 +1,11 @@
+# Poetry
 /dist/
-
 /poetry.lock
+
+# Robot Framework
+log.html
+report.html
+output.xml
+
+# Python
+__pycache__/
