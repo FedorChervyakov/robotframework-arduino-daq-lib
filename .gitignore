@@ -9,3 +9,6 @@ output.xml
 
 # Python
 __pycache__/
+
+# Vim
+*.un~
