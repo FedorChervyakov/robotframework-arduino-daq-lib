@@ -29,11 +29,10 @@ class ArduinoDAQLibrary:
 
     @property
     def board(self):
-        if self._board:
-            return self._board
-        else:
+        if not self._board:
             self._board = pymata4.Pymata4(com_port=self.device)
-            return self._board
+
+        return self._board
 
     #### Keywords ####
 
